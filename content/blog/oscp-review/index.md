@@ -1,25 +1,25 @@
 ---
 title: " root@OSCP# whoami -> 4NONYM05 (uid=0 gid=0 groups=0)"
-description: My take on OSCP
+description: My take on OSCP. This post talks about all the whats and whys of this awesome course offered by Offensive Security. I have tried harder to stay away from making it another OSCP review, instead tried to put in information that I gathered throughout the process which I think would be helpful to you! 
 date: '2019-05-02'
 image: './oscp-logo.png'
 ---
 
+![oscp-logo](oscp.png)
 ##The Good news!
 Receiving the **"We are happy to inform you"** email was a unique happiness. After months of hearing **"Try Harder"**, now I feel **"I tried harder"**.
 Now I am an **OSCP**, and here's my attempt to give back to the community. I have read a lot of blog posts with people explaining their experience; I'd try to stay away from the norm, and mention things that I found valuable and important.
 
-![email](https://4.bp.blogspot.com/-k9Yf777GwVQ/XMiO2xCIgRI/AAAAAAAAJho/Dr8pwMXM_XMCHACS7B9xmSEh3f8P3NNjQCLcBGAs/s1600/Screen%2BShot%2B2019-04-30%2Bat%2B11.05.06%2BAM.png)
 ![email](email.png)
 
 **I hope this would help you get from "tryharder" --> "itriedharder"**
 
-![hell-yeah](https://1.bp.blogspot.com/-pcwYtLiPb70/XMiTc4b3lPI/AAAAAAAAJh0/CF4GT5ySSfwDbIPmKUTvGkBEcjRvTHO7ACLcBGAs/s1600/Oh-Hell-Yeah.png)
+![hell-yeah](hell-yeah.png)
 
 ###A brief about the Course!
 
 Penetration With Kali (PWK) is the course offered by Offensive Security, creator of Kali Linux, to help Security enthusiast building out skills as penetration tester. The unique attribute of this course is that it provides students to acquire skills through hands-on lab experience, say good bye to all those certification courses that cram you with all information but do not provide any opportunity to test your skills.    
-On contrary, this course is full of challenges. You start off with basic concepts and go out to conquer the Lab network. One other beautiful thing about this course that sets it apart is its close resemblance with real world experience. I'd not go too far to say Offensive Security lab machines mimic targets we come across regularly on day to day pentests, but I can state with confidence that challenges in lab environment would not involve any CTF like elements. Generally, CTFs are designed like riddles, you solve one and make your way till you get all the flags. PWK is less about flags (proof.txt) and more about **what can you do with the access that you have! **    
+On contrary, this course is full of challenges. You start off with basic concepts and go out to conquer the Lab network. One other beautiful thing about this course that sets it apart is its close resemblance with real world experience. I'd not go too far to say Offensive Security lab machines mimic targets we come across regularly on day to day pentests, but I can state with confidence that challenges in lab environment would not involve any CTF like elements. Generally, CTFs are designed like riddles, you solve one and make your way till you get all the flags. PWK is less about flags (proof.txt) and more about **what can you do with the access that you have!**    
  This course will teach you to do basic exploit development for Buffer overflow exploits, enumerate systems with different tools, conduct Remote as well as client side attacks, read and modify publicly available exploits to conduct attacks etc. 
 In order to gain Offensive Security Certified Professional (OSCP) designation, you need to complete the course PWK and pass the OSCP exam. The tricky part about the exam is it is 24 hours long! Yes, that is tiring. I will put more light into exam and its components in later part of this post.     
 Learn more: [Offensive Security](https://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/ "OSCP Homepage")
@@ -33,7 +33,7 @@ Learn more: [Offensive Security](https://www.offensive-security.com/information-
 
 If  you belong to any of those category, OSCP is right for you!
 
-![lol](https://2.bp.blogspot.com/-zV5ywEJNXIo/XMkKHxSkWJI/AAAAAAAAJiU/4KHLSqthkGQMVJQ8WFwe6_HacxsyYEMtACLcBGAs/s1600/lologuy.jpg)
+![lol](lol.jpg)
 
 Yeah, I thought I had you there... But truly OSCP is for anyone and everyone who is interested in learning more about penetration testing.
 
@@ -46,7 +46,7 @@ Offensive Security advises this course not to be an introductory course, and any
   * **Accustomed with scripting languages (Python, Perl, Ruby etc.)**
   * **Solid grasp of information security concepts**
 
-![baby](https://2.bp.blogspot.com/-EZQR0HclSRM/XMkbcN62XVI/AAAAAAAAJis/PY-8TcJ2-W0R3JomQcvxLq5w2o3XoXoGwCLcBGAs/s1600/baby.jpg)
+![baby](baby.jpg)
 
 That's the spirit! You don't have to be an expert; as long as you know how TCP works, you should be fine.   
 These are okay, but the most accurate and my favorite one is (and I quote Offensive Security on this)
@@ -56,7 +56,7 @@ I am not joking! This course will teach you a life lesson to **"Keep calm, and t
 It was so hard making it through this much without saying the mantra! Yes, if you are ready to try harder and work through your pain and sufferance, this course is for you!    
 Learn more: [Requirements](https://www.offensive-security.com/pwk-syllabus/)
 
-![start-meme](https://1.bp.blogspot.com/-TMg-WMfSgyA/XMkOeBdefxI/AAAAAAAAJig/nOjmDTP2TcgoCCpHtTd6h7aOHv-YDvD8ACLcBGAs/s1600/jvtt3.jpg)
+![start-meme](start-meme.jpg)
 
 ###PWK Course Breakdown
 
@@ -64,7 +64,7 @@ The course itself comes with a 380 pages PDF and 20 hours of instructional video
  This is not just because you'll get 5 bonus marks (*) in your exam, but as legends say "Walk before you run". This course videos and exercises are simple enough to follow as well as important enough to fuel you for the long journey ahead!    
 One of my favorite lessons of this course was how thorough they teach you to do exploit development for Buffer Overflows!
 
-![shell-meme](https://3.bp.blogspot.com/-wE0nyJs3uYk/XMkejEtExBI/AAAAAAAAJjE/r-DTzFkB48c4hGZgomlGDEYtqGJ1ZmpLgCLcBGAs/s1600/C-9MQ1rXgAAgRs2.jpg)
+![shell-meme](shell-meme.jpg)
 
 My recommendation is to complete the exercises with the videos in a week or two. During this time, do not touch any lab machines. Course exercise itself will ask you to do so, but trust me, at this point I'd leave them and progress through the course. 
 
@@ -84,12 +84,12 @@ If you have done so, you'll feel a smooth transition between labs exercises to l
 I created a file containing all hosts, and used a random number generator to assign my next target. Of course there were exceptions. As I have stated before, being realistic is one thing I love about PWK. Which means it is much more than just grabbing the proof.txt file, there are possibility of information mining, lateral movement and all the fun stuff!     
 Go get started already! Go hack the planet of PWK!
 
-![ned-meme](https://1.bp.blogspot.com/-jPHxYJbLKPI/XMs_tXei46I/AAAAAAAAJmA/dyMkyLCmJ501V3qU7KhRVVYb9LaXDGexACLcBGAs/s1600/brace-yourself-oscp.jpg)
+![ned-meme](ned-meme.jpg)
 
 Lab machines are divided into four different sub networks, and as you progress through you might be able to unlock additional sections of the entire subnet. On each lab machine you're expected to gain highest level of system privilege, and as a proof, a proof.txt file is placed on Administrator's desktop/root directory of each machine. This file is only readable to the highest privilege user on the system. However, just reading this file is not enough, if you're planning to document a machine and receive credit. I have mentioned earlier, you can get bonus 5 marks by completing lab exercises. Well, that was not the whole truth, I was testing "your attention to detail" skill. In order to claim those 5 points, you need to document all the lab exercises (unless mentioned otherwise) as well as detailed walkthrough of 10 unique machines in the lab. Your exploitation technique for each of these 10 machines has to be unique. Wait, not finished yet, also **you have to attach screenshot of proof.txt file along with IP address by running (ifconfig/ipconfig) in a shell.** A lot of requirements huh!!??!! Don't be me, and please pay attention to this at the start of the course. I realized this when I was pwning my 37th machine, and I had to go back into each one of those to get the screenshot! Pretty dumb huh! Who said I am smart, lol.   
 For those of who has a 9-5 job like me, this is going to be hard. With all the pressure at work, make sure to spend 4-6 hours a day in the labs and having a 90 days lab access is helpful.
 
-![three-week](https://2.bp.blogspot.com/-EuQ16NDb9jc/XMkyfoLT9YI/AAAAAAAAJjY/m1OA9IQs3BkRZC6sxxlOr-9HSrkwdGKoACLcBGAs/s1600/haha.jpg)
+![three-week](three-week.jpg)
 
 If you are not coming in as a professional penetration tester, OSCP offers a tremendous learning curve, one of the best in the industry. Everything comes at a cost, the learning curve is very steep at the beginning of the course. Good news, once you cross the barrier, you'll see through it! 
 
@@ -104,11 +104,11 @@ If you are not coming in as a professional penetration tester, OSCP offers a tre
   * Make yourself a schedule as you progress, and measure continuously. This would help you see where you stand, and how far you have gotten since you have started.   
   * **Do not skim through forum posts before starting with a machine!** There’s a reason I put it in bold. Again, lab is for you to learn, not rush to get proofs. Forum is there to help you when you are stuck for a long time, even in that case, first thing you should do is to move onto a next target and come back later to current one. Forum posts contain more spoilers than you’d imagine. I used forum posts after I have rooted a machine and wanted to get perspective of other students. You don’t believe me, do you? There were two things I have used to avoid forums before owning system, one, talking to an Offsec Admin on chat support, you can be pretty sure they won’t give you any spoilers, all they would say is to try harder, but what matters is the way they say it. I have found Admins extremely helpful throughout the course. Second, I used to talk to my friends who has very limited security knowledge explaining every detail of my steps; until I found out what was I doing wrong! (This is called rubber duck debugging)    
 
-![chance](https://3.bp.blogspot.com/-8yzzpufBqTY/XMkxxpCD0gI/AAAAAAAAJjQ/uugfSu5iLSkfrMFSL54OlEQc59N-hX72QCLcBGAs/s1600/exam-done.jpg)
+![chance](chance.jpg)
 
 Sometimes this is all you need to get over a problem, hope. One thing I feel everyone should practice is making skeleton attack paths for different famous ports (21, 80 etc.). List down your tools as you go through the machines and attach them to respective port numbers. This helps you in two ways, you don't forget to enumerate just by looking at your skeleton cheatsheet, secondly, it helps you remember plethora of tools you're going to be using during this course and hopefully throughout your career!   
 
-![all-pwned](https://3.bp.blogspot.com/-WW9m1ky1Uis/XMk0jUbxOFI/AAAAAAAAJjk/G6Ueroin2bsL9-f2vz7RPK5jLix8GK4_ACLcBGAs/s1600/pwned.jpg)
+![all-pwned](all-pwned.jpg)
 
 If you have managed to root every machine in the labs, kudos to you! Great job! However, there is no linear correlation between the number of machines you have pwned in the lab and your chances of passing the exam. There are people who passed the exam, when they have just pwned 10 machines from lab, and there have been instance where people with more than 40 rooted machines have failed to pass the exam. This is not to discourage you to root machines, but to remind you that it is not about getting the proof file, it is about the learning you gather!  
 
@@ -125,7 +125,7 @@ Enough with what to do what not to do, now I am gonna write about the final ridd
   * Once you have completed your first 24 hours or ended your exam VPN, timer of 24 hours starts for your report submission. In my opinion, which can be a lot, but can be daunting as well. Because you might not have your screenshots in place, and you’re already tired!    
   * Your exam documentation is mandatory, and it needs to be a detailed walkthrough so that someone can reproduce your steps. One more important thing about the report, it should contain screenshots of the keys (local/proof) you find on each system with ipconfig/ifconfig. The reason for this is, you need to prove you have shell access to the machine. Be mindful, web shells do not count!    
 
-![buffer-meme](https://1.bp.blogspot.com/-1uTpCGZFOjM/XMsPvzs7tRI/AAAAAAAAJjw/_M0qW5am1FgvnZuEEpYUkL6hzPc_qIu0wCLcBGAs/s1600/oscp_buffer.jpg)
+![buffer-meme](buffer-meme.jpg)
 
 There are many things about the exam that you learn firsthand, but some of them are easy to avoid. I am gonna try my best to remember any of those things that you need not to go through. I was thinking of avoiding eat, sleep which is on every other reviews, but for the sake of completeness, I am going to put them as well, so please bear with me!
 
@@ -149,7 +149,7 @@ You need to know one thing about me, so you can relate. I am not a Windows guy, 
 Around 2 AM I went to sleep and set an alarm for 4 AM. I left my screen shared but disconnected the web cam after getting permission from the invigilator. But guess what, I woke up straight around 8:30. I was freaked out at first, but I knew I have the marks to pass, so came back sane. Spent remaining hours on the last machine and also to make sure on taking screenshots. At 10:45 AM, my VPN was disconnected and I was off to report. There are two things to pick up from here, keep switching machines, and sleep is very important, of course not 6 hours sleep, but even if you sleep for 1:30 hour that makes a difference.     
  I submitted my report (45 pages) the same day, heavily armed with screenshots. Prepared the zip file with my exam and lab report, sent it home to receive a confirmation almost instantly. Within next 24 hours I received the most delightful email so far!   
 
-![passed](https://3.bp.blogspot.com/-3RbCMFtNtxo/XMsc7XGNGiI/AAAAAAAAJlE/-b6nKhJ4fS0-vqVh_59oGimRofwNwCU-gCLcBGAs/s1600/lolwa.jpg)
+![passed](passed.jpg)
 
 ###Conclusion: 
 
@@ -161,6 +161,6 @@ In a nutshell, OSCP is a perfect way to hone your security skills and get your h
 
 OSCP is one of the certification I am really proud of. I can vouch you'd enjoy the lab environment if you like challenge. PWK provides great opportunity for you to test your technical skills and patience. If you can master these, you'd see yourself advancing in your career and in the industry. Good luck! **"Try Harder!"**
 
-![try-harder](https://3.bp.blogspot.com/-rze7NdT8Ol4/XMs-B67oC_I/AAAAAAAAJlo/1fanXwj57zEheClwxBRBYsgCZvbcgZPfACLcBGAs/s1600/offsec-say-tryharder-798x284.png)
+![try-harder](try-harder.png)
 
-Hope you have enjoyed the post. I am going to post a few other more technical posts with tool reviews, handling different situation you come across during a penetration test in focus. Follow me on [Twitter](https://twitter.com/0ff5ec) @0ff5ec to stay tuned!
+Hope you have enjoyed the post. I am going to post a few other more technical posts with tool reviews, handling different situation you come across during a penetration test in focus. Stay tuned for new posts!

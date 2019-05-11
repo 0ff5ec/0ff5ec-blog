@@ -1,43 +1,78 @@
 module.exports = {
   siteMetadata: {
-    title: `0ff5ec's blog`,
-    description: `My blog`,
-    author: `@0ff5ec`,
+    title: `0ff5ec's inSecurity Blog`,
+    author: `0ff5ec`,
+    description: `A security blog with React & Gatsby.`,
+    siteUrl: `https://0ff5ec.com/`,
+    social: {
+      twitter: `0ff5ec`,
+    },
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`,
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+        //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-feed`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Gatsby Starter Blog`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#4676ec`,
+        theme_color: `#4676ec`,
+        display: `minimal-ui`,
+        icon: `content/assets/logo.png`,
+      },
+    },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
   ],
 }

@@ -1,39 +1,73 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
+import React from "react"
+import { Link, graphql } from "gatsby"
 import './post.css';
-import Layout from '../components/layout'
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { rhythm } from "../utils/typography"
 
-const IndexPage = (props) => {
-  const postList = props.data.allMarkdownRemark;
-  return (
-    <Layout>
-      {postList.edges.map(({ node }, i) => (
-        <Link to={node.fields.slug} className="link" >
-          <div className="post-list">
-            <h1>{node.frontmatter.title}</h1>
-            <span>{node.frontmatter.date}</span>
-            <p>{node.excerpt}</p>
-          </div>
-        </Link>
-      ))}
-    </Layout>
-  )
+class BlogIndex extends React.Component {
+  render() {
+    const { data } = this.props
+    const siteTitle = data.site.siteMetadata.title
+    const posts = data.allMarkdownRemark.edges
+
+    return (
+      <Layout location={this.props.location} title={siteTitle}>
+        <SEO
+          title="Home"
+          keywords={[`blog`, `security`, `pentest`, `offensive security`, `penetration testing`]}
+        />
+        <Bio />
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <Link to={node.fields.slug} className="link" >
+            <div key={node.fields.slug} className="post-list">
+              <h3
+                style={{
+                  marginTop: rhythm(1 / 4),
+                }}
+              >
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+              />
+            </div>
+            </Link>
+          )
+        })}
+      </Layout>
+    )
+  }
 }
 
-export default IndexPage;
+export default BlogIndex
 
-export const listQuery = graphql`
-  query ListQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          fields{
+          excerpt
+          fields {
             slug
           }
-          excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM Do YYYY")
+            date(formatString: "MMMM DD, YYYY")
             title
+            description
           }
         }
       }

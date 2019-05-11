@@ -1,4 +1,4 @@
 # These rules will change if you change your site’s custom domains or HTTPS settings
 
 # Redirect default Netlify subdomain to primary domain
-https://practical-mccarthy-c5fb40.netlify.com/* https://0ff5ec.com/:splat 301!
+https://0ff5ec.netlify.com/* https://0ff5ec.com/:splat 301!
