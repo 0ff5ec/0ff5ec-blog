@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `0ff5ec's inSecurity Blog`,
     author: `0ff5ec`,
-    description: `A security blog with React & Gatsby.`,
+    description: `A security blog build with React & Gatsby. This is 0ff5ec's attempt to add value to the awesome and active offensive security comminity to help current/aspiring penetration testers`,
     siteUrl: `https://0ff5ec.com/`,
     social: {
       twitter: `0ff5ec`,
